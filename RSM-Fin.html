@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>RSM-Fin</title> 
+	<link rel="stylesheet" href="css/RSM-Fin_CSS.css" media="screen" type="text/css" />
+    <script language="JavaScript">
+        
+        function ShowTime(){
+          var fin = new Date()
+          var fin_Day = fin.getDay()
+          var fin_hours = fin.getHours()
+          var fin_minutes = fin.getMinutes()
+          var fin_seconds = fin.getSeconds()
+          
+          var fin_h = fin_hours*3600
+          var fin_m = fin_minutes*60
+          var fin_s = fin_seconds
+          var fin_time = fin_h+fin_m+fin_s
+          document.getElementById('TimeBox-01').innerHTML = fin_hours+':'+fin_minutes+':'+fin_seconds;
+          document.getElementById('TimeBox-02').innerHTML = fin_time;
+		  document.getElementById('container-03').style.display = "block";
+        }
+        
+    </script>
+</head>
+
+<body>
+	<div id="container-01">
+        <button id="fin_btn" onClick="ShowTime()">按我結束</button>
+    </div>
+    <div id="container-02">
+    	<div id="TimeBox-01"></div>
+    	<div id="TimeBox-02"></div>
+    </div>
+    <div id="container-03" style="display: none;">
+    	實驗已完成，請舉手向工作人員通知<br />並稍待片刻，感謝您的配合。
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+body {
+	margin:0px;
+}
+#container-01 {
+	width:100%; height:400px;
+	background:transparent;	
+}
+#start_btn {
+	position:absolute;
+	left:50%;	/*物件左上角為對齊點*/
+	margin:200px 0px 0px -114px;	/*因為寬度228px，因此需往左114px*/
+	padding:25px 80px;
+	width:228px; height:70px;		
+	font-family:"Arial Unicode MS", "微軟正黑體";
+	font-size: 16px;
+	color: #fff;
+	background: #17954c;
+	border: 2px dashed #17954c;
+	border-radius: 15px;
+	box-sizing: border-box;		
+	cursor: pointer;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+#start_btn:hover {
+	background: transparent;
+	color: #17954c;
+}
+#time_btn {
+	position:absolute;
+	left:50%;
+	margin:350px 0px 0px -50px;		/*因為寬度100px，因此需往左50px*/
+	padding:10px 16px;
+	width:100px; height:40px;
+	font-family:"Arial Unicode MS", "微軟正黑體";
+	font-size: 16px;
+	color: #17954c;
+	background: transparent;
+	border: 2px dashed #17954c;
+	box-sizing: border-box;		
+	cursor: pointer;
+}
+#container-02 {
+	position:relative;
+	left:50%;
+	margin:0px 0px 0px -60px;
+	width:228px;
+	color:#7a7a7a;
+	text-align:center;
+	font-family:"Arial Unicode MS", "微軟正黑體";
+	font-size:24px;
+}
+#TimeBox-01 
+{ 
+	position:absolute;
+ 	top:0;
+ 	left:0;
+	width:120px;
+	
+}
+#TimeBox-02
+{ 
+	position:absolute;
+ 	top:0;
+ 	right:0;
+	width:120px;
+}

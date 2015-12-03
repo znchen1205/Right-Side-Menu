@@ -1,0 +1,112 @@
+*, body, button, input, textarea, select {
+  text-rendering: optimizeLegibility;
+  font-size:100%;
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+  margin:0;
+  padding:0;
+}
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+fieldset,img { 
+  border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+  font-style:normal;
+  font-weight:normal;
+}
+ol,ul {
+  list-style:none;
+}
+caption,th {
+  text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-size:100%;
+  font-weight:normal;
+}
+q:before,q:after {
+  content:'';
+}
+abbr,acronym { border:0;}
+
+
+
+body{
+	background-color:#e3dfda;
+}
+#task{
+  padding:5px;
+  font-family:"Arial Unicode MS", "微軟正黑體";
+  font-size:16px;
+  color:#FFF;
+  background-color:#000;
+  text-align:center;
+}
+#task span{
+  margin:0px 5px;
+  padding:0px 5px;
+  color:#F90;
+  border:#F90 solid 2px;
+}
+article {
+    width:100%;
+   	background-color:#fff;
+    z-index: 5;
+    position: fixed;
+    right: 0px;
+    height: 100%;
+}
+#content{
+	padding:10px 20px 10px 10px;		
+}
+#btn_bar{
+	position:relative;
+	background-color:#e3dfda;
+	display:block;
+	height:40px;
+}
+#menu_btn {
+	position:absolute;
+	right:0px; 
+	margin:0px; padding:10px;
+    display: block;
+	width:75px; height:40px;
+	background-color:#D96704;
+	border:none;
+	color:#fff;
+	font-size:16px;
+	font-family:'微軟正黑體';
+	text-align:center;
+	cursor:pointer;
+}
+#menu_btn:hover {
+	background-color: #BF4904;  
+}
+nav {
+    float:right;
+    width:180px;
+}
+nav ul li {
+    background-color:#403a30;  /*______________主項目顏色______________*/
+    border-bottom: 1px solid #564e41;
+}
+nav ul li a {
+    padding: 10px;
+    display: block;
+    color:#fff;
+    text-decoration: none;
+	text-align:center;
+	font-size:16px;
+	font-family:'微軟正黑體';
+}
+nav ul li a:hover {
+    background-color:#73020C;  /*______________主項目hover顏色______________*/
+}
+nav ul li ul li {
+    background-color:#837662; /*______________子項目顏色______________*/
+    border-bottom: 1px solid #a09380;
+}

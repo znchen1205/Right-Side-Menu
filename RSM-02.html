@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>RSM-02</title>
+    <link href="css/RSM_CSS.css" rel="stylesheet" type="text/css">
+    <script type='text/javascript' src="js/jquery-1.7.2.min.js"></script>
+    <script language="javascript" type="text/javascript">
+		$(window).load(function(){
+		$('nav li:has("ul")').children('ul').hide();
+		$('#menu_btn').toggle(
+		function () {
+			$('article').animate({
+				right: 180
+			});
+		},
+		function () {
+			$('article').animate({
+				right: 0
+			});
+		});
+		$('nav li:has("ul")').click(function(){
+			$(this).children('ul').slideToggle();
+		});
+		});
+    </script>
+</head>  
+<body >
+    <div id="task"><span>16%</span>請點擊「科技」類別內「資訊電子」選項</div>
+    <nav>
+        <ul>
+        	<li><a href="#">生活</a>
+                <ul>
+                    <li><a href="RSM-03-X.html">氣象預報</a></li>
+                    <li><a href="RSM-03-X.html">寵物美食</a></li>
+                    <li><a href="RSM-03-X.html">消費交通</a></li>
+                </ul>
+            </li>
+
+        	<li><a href="#">國際</a>
+                <ul>
+                    <li><a href="RSM-03-X.html">歐美非洲</a></li>
+                    <li><a href="RSM-03-X.html">中港澳台</a></li>
+                    <li><a href="RSM-03-X.html">日韓澳俄</a></li>
+                </ul>
+            </li>
+        
+        	<li><a href="#">財經</a>
+                <ul>
+                    <li><a href="RSM-03-X.html">經貿財稅</a></li>
+                    <li><a href="RSM-03-X.html">產業動態</a></li>
+                    <li><a href="RSM-03-X.html">股市匯市</a></li>
+                </ul>
+            </li>
+        
+        	<li><a href="#">影劇</a>
+                <ul>
+                    <li><a href="RSM-03-X.html">音樂電影</a></li>
+                    <li><a href="RSM-03-X.html">電視廣播</a></li>
+                    <li><a href="RSM-03-X.html">藝人動態</a></li>
+                </ul>
+            </li>
+        
+        	<li><a href="#">科技</a>
+                <ul>
+                    <li><a href="RSM-03-X.html">自然環境</a></li>
+                    <li><a href="RSM-03-X.html">科學發展</a></li>
+                    <li><a href="RSM-03.html">資訊電子</a></li>
+                </ul>
+            </li>
+        
+        	<li><a href="#">地方</a>
+                <ul>
+                    <li><a href="RSM-03-X.html">南部東部</a></li>
+                    <li><a href="RSM-03-X.html">中部離島</a></li>
+                    <li><a href="RSM-03-X.html">北部地區</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+	<article>
+        <div id="btn_bar">
+            <button type="button" id="menu_btn">選單</button>
+        </div><!--end btn_bar-->
+        <div id="content">
+        </div><!--end content-->
+    </article>
+</body>
+</html>  

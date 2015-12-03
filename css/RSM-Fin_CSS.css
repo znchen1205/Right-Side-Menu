@@ -1,0 +1,67 @@
+body {
+	margin:0px;
+}
+#container-01 {
+	width:100%; height:300px;
+	background:transparent;
+}
+#fin_btn {
+	position:absolute;
+	left:50%;	/*物件左上角為對齊點*/
+	margin:200px 0px 0px -114px;	/*因為寬度228px，因此需往左114px*/
+	padding:25px 80px;
+	width:228px; height:70px;		
+	font-family:"Arial Unicode MS", "微軟正黑體";
+	font-size: 16px;
+	color: #fff;
+	background: #f79d03;
+	border: 2px dashed #f79d03;
+	border-radius: 15px;
+	box-sizing: border-box;		
+	cursor: pointer;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+#fin_btn:hover {
+	background: transparent;
+	color: #f79d03;
+}
+
+#container-02 {
+	position:relative;
+	left:50%;
+	margin:0px 0px 0px -114px;
+	width:228px;
+	color:#7a7a7a;
+	text-align:center;
+	font-family:"Arial Unicode MS", "微軟正黑體";
+	font-size:24px;
+}
+#TimeBox-01 
+{ 
+	position:absolute;
+ 	top:0;
+ 	left:0;
+	width:120px;
+	
+}
+#TimeBox-02
+{ 
+	position:absolute;
+ 	top:0;
+ 	right:0;
+	width:120px;
+}
+#container-03 {
+	position:absolute;
+	left:50%;
+	margin:100px 0px 0px -200px;
+	width:400px;
+	
+	color:#7a7a7a;
+	text-align:center;
+	line-height:32px;
+	font-family:"Arial Unicode MS", "微軟正黑體";
+	font-size:16px;
+}
